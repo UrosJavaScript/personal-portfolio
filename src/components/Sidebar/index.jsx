@@ -19,19 +19,19 @@ import {
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link className="logo" to="/personal-portfolio">
         <img src={LogoU} alt="logo" />
         <p className="sub-logo">Uroš</p>
       </Link>
       <nav>
-        <NavLink exact="true" acticeclassname="active" to="/">
+        <NavLink exact="true" acticeclassname="active" to="/personal-portfolio/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
           acticeclassname="active"
           className="about-link"
-          to="/about"
+          to="/personal-portfolio/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -39,7 +39,7 @@ const Sidebar = () => {
           exact="true"
           acticeclassname="active"
           className="project-link"
-          to="/project"
+          to="/personal-portfolio/project"
         >
           <FontAwesomeIcon icon={faDiagramProject} color="#4d4d4e" />
         </NavLink>
@@ -47,7 +47,7 @@ const Sidebar = () => {
           exact="true"
           acticeclassname="active"
           className="contact-link"
-          to="/contact"
+          to="/personal-portfolio/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
