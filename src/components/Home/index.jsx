@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './index.scss'
@@ -79,12 +81,20 @@ const Home = () => {
               <h2>Frontend Developer / JavaScript </h2>
               <h2>Backend Developer / PHP </h2>
             </div>
-            <Link to="/personal-portfolio/contact" className="flat-button">
-              CONTACT ME
-            </Link>
-          </div>
 
-          <AnimatedSVG />
+            <div className="wrapper-btn">
+
+              <button className="btn-home-contact">
+                <Link to="/personal-portfolio/contact">CONTACT ME</Link>
+              </button>
+              {/* <button className="btn-home-download">
+                DOWNLOAD CV
+              </button> */}
+            </div>
+          </div>
+          <div className="home-position-animation">
+            <AnimatedSVG />
+          </div>
         </div>
       )}
     </>
