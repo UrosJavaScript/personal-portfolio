@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/UrosJavaScript/personal-portfolio/static/css/main.ee64e7d3.css",
+    "main.js": "/UrosJavaScript/personal-portfolio/static/js/main.b876f03c.js",
+    "static/js/787.fb771931.chunk.js": "/UrosJavaScript/personal-portfolio/static/js/787.fb771931.chunk.js",
+    "static/media/angular-apart.png": "/UrosJavaScript/personal-portfolio/static/media/angular-apart.220355f7d77be8a1d10f.png",
+    "static/media/redux-series.png": "/UrosJavaScript/personal-portfolio/static/media/redux-series.e07a618b2ae289a3c7db.png",
+    "static/media/angular-app.png": "/UrosJavaScript/personal-portfolio/static/media/angular-app.35cbc0a45beebfb4fa0f.png",
+    "static/media/blog.png": "/UrosJavaScript/personal-portfolio/static/media/blog.4edbc9ac7c6e5f0d7e06.png",
+    "static/media/MoonDance-Regular.ttf": "/UrosJavaScript/personal-portfolio/static/media/MoonDance-Regular.69bc2883db3811002422.ttf",
+    "static/media/pr-1.png": "/UrosJavaScript/personal-portfolio/static/media/pr-1.edb88ac72895be340441.png",
+    "static/media/zoom-apk.png": "/UrosJavaScript/personal-portfolio/static/media/zoom-apk.c83a73abe77998bcc51b.png",
+    "static/media/raz-cg.png": "/UrosJavaScript/personal-portfolio/static/media/raz-cg.5c7a54f679a442dce926.png",
+    "static/media/Barlow-Regular.ttf": "/UrosJavaScript/personal-portfolio/static/media/Barlow-Regular.e7eb634d040a6f384033.ttf",
+    "static/media/shop.png": "/UrosJavaScript/personal-portfolio/static/media/shop.787d186b7191403eb5bd.png",
+    "static/media/u-veliko.svg": "/UrosJavaScript/personal-portfolio/static/media/u-veliko.67bf20269ff4cc8e46d1be2a459ab9c3.svg",
+    "static/media/u.svg": "/UrosJavaScript/personal-portfolio/static/media/u.b8c568b7a83e0fde89240526e8217274.svg",
+    "index.html": "/UrosJavaScript/personal-portfolio/index.html",
+    "main.ee64e7d3.css.map": "/UrosJavaScript/personal-portfolio/static/css/main.ee64e7d3.css.map",
+    "main.b876f03c.js.map": "/UrosJavaScript/personal-portfolio/static/js/main.b876f03c.js.map",
+    "787.fb771931.chunk.js.map": "/UrosJavaScript/personal-portfolio/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee64e7d3.css",
+    "static/js/main.b876f03c.js"
+  ]
+}
