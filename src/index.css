@@ -4,34 +4,27 @@ html {
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Finlandica Regular', 'sans-serif';
+  font: 300 11px/1.4 'Barlow', 'sans-serif';
   color: #444;
-  background: #022c43;
+  background: #090d16;
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import "animate.css";
+@import 'animate.css';
 
 @font-face {
-  font-family: 'Finlandica Regular';
-  src: local('Finlandica Regular'), url('./assets/fonts/Finlandica-Regular.ttf') format('ttf');
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow'), url(./assets/fonts/barlow/Barlow-Regular.ttf);
 }
-@font-face {
-  font-family: 'ChelseaMarket Regular';
-  src: local('ChelseaMarket Regular'), url('./assets/fonts/ChelseaMarket-Regular.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'YeonSung Regular';
-  src: local('YeonSung Regular'), url('./assets/fonts/YeonSung-Regular.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'Sevillana Regular';
-  src: local('Sevillana Regular'), url('./assets/fonts/Sevillana-Regular.ttf') format('ttf');
-}
+
 @font-face {
   font-family: 'Moon Dance';
-  src: local('Moon Dance'), url('./assets/fonts/MoonDance-Regular.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 500;
+  src: local('Moon Dance'), url(./assets/fonts/moonDance/MoonDance-Regular.ttf);
 }

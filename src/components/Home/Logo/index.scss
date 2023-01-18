@@ -1,44 +1,77 @@
 .logo-container {
-    z-index: 0;
-    width: 400px;
-    height: 609px;
-    position: absolute;
-    top: 0;
-    right: 10%;
+  z-index: 0;
+  width: 500px;
+  height: 609px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  opacity: 0;
+
+  @media screen and (max-width: 1200px) {
+    top: 40%;
+    right: 0;
+  }
+
+  svg {
+    width: 40%;
+    height: auto;
     bottom: 0;
-    left: auto;
+    transform: translate(75%, 100%);
+
+    @media screen and (max-width: 991.98px) {
+      width: 20%;
+      height: auto;
+      bottom: 0;
+      transform: translate(300px, 345px);
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      width: 40%;
+    }
+  }
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
     margin: auto;
+    width: 100%;
     opacity: 0;
+    z-index: 1;
+    transform: translateX(0%);
 
-    svg {
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        transform: rotateZ(30deg) !important;
-
-        
+    @media screen and (max-width: 575.98px) {
+      width: 40%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: -155px;
+      right: -43%;
     }
-
-    .solid-logo {
-        position: absolute;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: 0;
-        margin: auto;
-        width: 100%;
-        opacity: 0;
-        z-index: 1;
-        //transform: rotateZ(30deg);
-        border-radius: 15%;
-        transform: translateX(5%);
+    @media screen and (min-width: 576px) and (max-width: 991.98px) {
+      width: 55%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: -130px;
+      right: -43%;
     }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      width: 90%;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .svg-container {
-    stroke: #ffd700;
-    stroke-width: 5;
+  stroke: #ffd700;
+  stroke-width: 5;
 
-    animation-name: rotateInUpRight;
-    animation-duration: 6s;
+  animation-name: rotateInUpRight;
+  animation-duration: 4s;
 }

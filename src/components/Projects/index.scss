@@ -1,0 +1,153 @@
+.container-projects {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+
+  .main-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 50px;
+    align-items: center;
+    margin: 50px 10px 100px 0px;
+    padding: 0 0 0 70px;
+
+    .card {
+      width: 300px;
+      height: 50%;
+      border-radius: 10px;
+      box-shadow: rgb(64 63 18) 0px 22px 70px 4px;
+
+      .projects-page-cards {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px rgb(0 0 0 / 12%);
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(78, 90, 255, 0.178);
+        transition: 0.5s;
+
+        .image-projects-cards-wrapper {
+          img {
+            width: 100%;
+            border-radius: 10px;
+            height: 234px;
+            object-fit: cover;
+          }
+        }
+        .projects-cards-content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          // img {
+          //   width: 100%;
+          //   border-radius: 10px;
+          //   height: 234px;
+          //   object-fit: cover;
+          // }
+
+          .projects-wrapper {
+            .projects-cards-top-content {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              h2 {
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                line-height: 22px;
+                hyphens: auto;
+                color: #fff;
+                font-family: 'Barlow';
+                @media screen and (max-width: 767.98px) {
+                  font-size: 16px;
+                }
+              }
+
+              .project-using-lang {
+                color: rgba(255, 255, 255, 0.562);
+                font-weight: 700;
+                text-transform: uppercase;
+              }
+              .projects-bottom-wrapper {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-evenly;
+                padding: 20px 0;
+
+                button {
+                  transition: transform 1s ease-in-out;
+                }
+                button a {
+                  align-items: center;
+                  display: flex;
+                  text-decoration: none;
+                  color: #fff;
+                  font-family: 'Barlow';
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  font-size: 15px;
+                  letter-spacing: 2px;
+
+                  @media screen and (max-width: 767.98px) {
+                    font-size: 12px;
+                    font-weight: 500;
+                  }
+                }
+
+                button a svg {
+                  font-size: 30px;
+                  margin-left: 5px;
+
+                  @media screen and (max-width: 767.98px) {
+                    font-size: 20px;
+                  }
+                }
+                button:hover {
+                  transform: translateX(4px);
+                  border-image: linear-gradient(to left, darkblue, #90cf16) 1;
+                }
+                .btn-projects-git {
+                  background-color: transparent;
+                  padding: 2px 10px;
+                  border-width: 2px;
+                  border-style: solid;
+                  border-image: linear-gradient(to right, darkblue, #90cf16) 1;
+                }
+                .btn-projects-live {
+                  background: transparent;
+                  padding: 2px 10px;
+                  border-width: 2px;
+                  border-style: solid;
+                  border-image: linear-gradient(to right, darkblue, #557a0c) 1;
+                }
+              }
+            }
+
+            .projects-description p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 28px;
+              margin-bottom: 15px;
+              font-family: 'Barlow';
+              color: #fff;
+              padding: 5px;
+              word-wrap: break-word;
+              @media screen and (max-width: 767.98px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

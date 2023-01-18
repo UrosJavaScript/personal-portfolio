@@ -1,0 +1,35 @@
+.wrapper-contact-page {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 2s 2s;
+  animation-fill-mode: forwards;
+
+  .location-container,
+  .email-container,
+  .phone-container,
+  .wrap-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .wrap-text span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5607843137);
+    letter-spacing: 2px;
+    line-height: 2;
+    font-family: 'Barlow';
+
+    @media screen and (max-width: 576px) {
+      font-size: 11px;
+    }
+  }
+}
