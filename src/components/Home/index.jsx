@@ -83,13 +83,14 @@ const Home = () => {
             </div>
 
             <div className="wrapper-btn">
-
               <button className="btn-home-contact">
                 <Link to="/personal-portfolio/contact">CONTACT ME</Link>
               </button>
-              {/* <button className="btn-home-download">
-                DOWNLOAD CV
-              </button> */}
+              <button className="btn-home-download">
+                <a href="/personal-portfolio/UrosKovcic_CV.pdf" download>
+                  DOWNLOAD CV
+                </a>
+              </button>
             </div>
           </div>
           <div className="home-position-animation">

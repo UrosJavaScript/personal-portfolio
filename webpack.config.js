@@ -1,40 +1,32 @@
-const TerserPlugin = require('terser-webpack-plugin')
+import TerserPlugin from 'terser-webpack-plugin'
 
-module.exports = {
-  entry: `${__dirname}/src/index.js`,
-  output: {
-    path: `${__dirname}/build`,
-    publicPath: '/build/',
-    filename: 'bundle.js',
-  },
-
-  module: {
-    rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }],
-  },
-
-  // required because the defaults for webpack -p don't remove multiline comments
-  optimization:
-    process.argv.indexOf('-p') === -1
-      ? {}
-      : {
-          minimize: true,
-          minimizer: [
-            new TerserPlugin({
-              terserOptions: {
-                output: {
-                  comments: false,
-                },
+export const entry = `${__dirname}/src/index.js`
+export const output = {
+  path: `${__dirname}/build`,
+  publicPath: '/build/',
+  filename: 'bundle.js',
+}
+export const module = {
+  rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }],
+}
+export const optimization =
+  process.argv.indexOf('-p') === -1
+    ? {}
+    : {
+        minimize: true,
+        minimizer: [
+          new TerserPlugin({
+            terserOptions: {
+              output: {
+                comments: false,
               },
-              extractComments: false,
-            }),
-          ],
-        },
-
-  // to mimic GitHub Pages serving 404.html for all paths
-  // and test spa-github-pages redirect in dev
-  devServer: {
-    historyApiFallback: {
-      rewrites: [{ from: /\//, to: '/404.html' }],
-    },
+            },
+            extractComments: false,
+          }),
+        ],
+      }
+export const devServer = {
+  historyApiFallback: {
+    rewrites: [{ from: /\//, to: '/404.html' }],
   },
 }
