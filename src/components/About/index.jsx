@@ -47,7 +47,7 @@ const About = () => {
 
             <div className="about-text">
               <p>
-                I am a Junior Full Stack Web Developer with a year and a half of
+                I am a Junior Full Stack Web Developer with a two years of
                 work experience. Currently, I mainly study and work on FrontEnd
                 technologies and go in the direction of additional development.
                 In 2018 I finished the PHP course at ITAcademy. During that time
