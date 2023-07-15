@@ -14,7 +14,7 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const [loading, setLoading] = useState(false)
 
-  function textAnimationAbout() {
+  const textAnimationAbout = () => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
@@ -58,7 +58,7 @@ const Contact = () => {
                       color="rgba(255, 255, 255, 0.5607843137)"
                     />
                   </span>
-                  <span>Šejkina 50Đ | Serbia, Belgrade</span>
+                  <span>Serbia, Belgrade</span>
                 </h3>
               </div>
 

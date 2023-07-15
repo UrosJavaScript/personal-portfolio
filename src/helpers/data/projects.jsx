@@ -16,6 +16,7 @@ export const PROJECTS_ITEM = [
     title: 'Personal Portfolio',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/personal-portfolio',
+
     description:
       'I made a custom loader and used animate.css for other animations. With of course the use of React useEffect and useState hooks, as well as reading dynamic data from json.',
     img: Project1,
@@ -24,6 +25,17 @@ export const PROJECTS_ITEM = [
 
   {
     id: 2,
+    title: 'Expo Mobile Application',
+    linkLive: '',
+    linkGithub:
+      'https://github.com/UrosJavaScript/ExpoCli-locationApk/tree/feature/task-2',
+    description:
+      'The main goal of developing this mobile application is to help people find their desired destination. As a registered user, you can save your favorite places. The application is still under development.',
+    img: Project7,
+    using: 'expo, react native, js, css, redux, async',
+  },
+  {
+    id: 3,
     title: 'RAZ Caregiver',
     linkLive: 'https://www.razmobility.com/about-us/',
     linkGithub: '',
@@ -32,16 +44,8 @@ export const PROJECTS_ITEM = [
     img: Project2,
     using: 'react native, codeigniter, php, css, html5',
   },
-  {
-    id: 3,
-    title: 'Blog Post',
-    linkLive: 'https://www.hernienzentrum.ch/blog/',
-    linkGithub: '',
-    description:
-      'Creating a dynamic blog page for creating and publishing blog posts. Using the ACF field and reading on the front. Each blog has its own page where you can see the publication date and author.',
-    img: Project3,
-    using: 'wordpress, php, css, html5',
-  },
+
+ 
 
   {
     id: 4,
@@ -54,17 +58,18 @@ export const PROJECTS_ITEM = [
     img: Project4,
     using: 'angular, ts, css, html5',
   },
-
   {
     id: 5,
-    title: 'Web Shop',
-    linkLive: '',
-    linkGithub: 'https://github.com/Uros12345678/cdi3-online_shop',
+    title: 'Angular Mobile Application',
+    linkLive:
+      'https://play.google.com/store/apps/details?id=com.zlatiborbooking.com.zlatiborbooking&pli=1',
+    linkGithub: '',
     description:
-      'I have created an online store using CodeIgniter3. You can log in as an administrator and have permission over all users. Modals created in jQuery - data stored in PHPMyAdmin.',
-    img: Project5,
-    using: 'codeigniter, php, mysql, css, html5',
+      'I created mobile application from Angular project. I used Gradle and Android SDK. The functionality is the same as on the web portal. The application can be downloaded from GooglePlay.',
+    img: Project8,
+    using: 'gradle, angular, ts, css, html5',
   },
+  
 
   {
     id: 6,
@@ -78,25 +83,26 @@ export const PROJECTS_ITEM = [
   },
   {
     id: 7,
-    title: 'Expo Mobile Application',
-    linkLive: '',
-    linkGithub:
-      'https://github.com/UrosJavaScript/ExpoCli-locationApk/tree/feature/task-2',
-    description:
-      'The main goal of developing this mobile application is to help people find their desired destination. As a registered user, you can save your favorite places. The application is still under development.',
-    img: Project7,
-    using: 'expo, react native, js, css',
-  },
-
-  {
-    id: 8,
-    title: 'Angular Mobile Application',
-    linkLive:
-      'https://play.google.com/store/apps/details?id=com.zlatiborbooking.com.zlatiborbooking&pli=1',
+    title: 'Blog Post',
+    linkLive: 'https://www.hernienzentrum.ch/blog/',
     linkGithub: '',
     description:
-      'I created mobile application from Angular project. I used Gradle and Android SDK. The functionality is the same as on the web portal. The application can be downloaded from GooglePlay.',
-    img: Project8,
-    using: 'gradle, angular, ts, css, html5',
+      'Creating a dynamic blog page for creating and publishing blog posts. Using the ACF field and reading on the front. Each blog has its own page where you can see the publication date and author.',
+    img: Project3,
+    using: 'wordpress, php, css, html5',
   },
+
+  
+  {
+    id: 8,
+    title: 'Web Shop',
+    linkLive: '',
+    linkGithub: 'https://github.com/Uros12345678/cdi3-online_shop',
+    description:
+      'I have created an online store using CodeIgniter3. You can log in as an administrator and have permission over all users. Modals created in jQuery - data stored in PHPMyAdmin.',
+    img: Project5,
+    using: 'codeigniter, php, mysql, css, html5',
+  },
+
+  
 ]

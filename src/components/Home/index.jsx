@@ -34,7 +34,7 @@ const Home = () => {
   ]
   const [loading, setLoading] = useState(false)
 
-  function textAnimation() {
+  const textAnimation = () => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)

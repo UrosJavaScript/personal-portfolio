@@ -9,9 +9,9 @@ const HomeLogo = () => {
   const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
 
-  function animGsap() {
-    gsap.registerPlugin(PixiPlugin)
-
+  const animGsap = () => {
+    gsap.registerPlugin(PixiPlugin);
+  
     gsap
       .timeline()
       .to(bgRef.current, {
@@ -20,8 +20,8 @@ const HomeLogo = () => {
       })
       .from(outlineLogoRef.current, {
         duration: 10,
-      })
-
+      });
+  
     gsap.fromTo(
       solidLogoRef.current,
       {
@@ -32,8 +32,9 @@ const HomeLogo = () => {
         delay: 4,
         duration: 4,
       }
-    )
-  }
+    );
+  };
+  
 
   useEffect(() => {
     animGsap()
