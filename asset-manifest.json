@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.631d9780.css",
-    "main.js": "/personal-portfolio/static/js/main.17a169f9.js",
+    "main.css": "/personal-portfolio/static/css/main.b0fc0f59.css",
+    "main.js": "/personal-portfolio/static/js/main.902aa2f9.js",
     "static/js/787.fb771931.chunk.js": "/personal-portfolio/static/js/787.fb771931.chunk.js",
-    "static/media/angular-apart.png": "/personal-portfolio/static/media/angular-apart.220355f7d77be8a1d10f.png",
-    "static/media/redux-series.png": "/personal-portfolio/static/media/redux-series.e07a618b2ae289a3c7db.png",
-    "static/media/angular-app.png": "/personal-portfolio/static/media/angular-app.35cbc0a45beebfb4fa0f.png",
-    "static/media/blog.png": "/personal-portfolio/static/media/blog.4edbc9ac7c6e5f0d7e06.png",
-    "static/media/zoom-apk.png": "/personal-portfolio/static/media/zoom-apk.a57733b56248747a5570.png",
     "static/media/MoonDance-Regular.ttf": "/personal-portfolio/static/media/MoonDance-Regular.69bc2883db3811002422.ttf",
-    "static/media/pr-1.png": "/personal-portfolio/static/media/pr-1.edb88ac72895be340441.png",
-    "static/media/raz-cg.png": "/personal-portfolio/static/media/raz-cg.5c7a54f679a442dce926.png",
+    "static/media/angular-apart.png": "/personal-portfolio/static/media/angular-apart.1e292304fb0b5ba8dac0.png",
+    "static/media/redux-series.png": "/personal-portfolio/static/media/redux-series.e12266bcd657150273ca.png",
+    "static/media/angular-app.png": "/personal-portfolio/static/media/angular-app.ffad576b850388664eae.png",
+    "static/media/blog.png": "/personal-portfolio/static/media/blog.11de2a1c733f94f1a7ff.png",
+    "static/media/react-news-api.png": "/personal-portfolio/static/media/react-news-api.23a4e9d340bc4dde49b7.png",
+    "static/media/web3heroes.png": "/personal-portfolio/static/media/web3heroes.776e7a3d7e4311f8be92.png",
+    "static/media/universityApk.png": "/personal-portfolio/static/media/universityApk.581328ebdba23049d9f5.png",
     "static/media/Barlow-Regular.ttf": "/personal-portfolio/static/media/Barlow-Regular.e7eb634d040a6f384033.ttf",
-    "static/media/shop.png": "/personal-portfolio/static/media/shop.787d186b7191403eb5bd.png",
+    "static/media/raz-cg.png": "/personal-portfolio/static/media/raz-cg.01b1fe73765c7eafa61a.png",
+    "static/media/zoom-apk.png": "/personal-portfolio/static/media/zoom-apk.f568af52be02b2cd343c.png",
+    "static/media/pr-1.png": "/personal-portfolio/static/media/pr-1.6cb9259e159c220584d5.png",
+    "static/media/tailwind-vite.png": "/personal-portfolio/static/media/tailwind-vite.9ce36603b2f065e8640d.png",
+    "static/media/react-weather-news.png": "/personal-portfolio/static/media/react-weather-news.dc48aa97c3edc18a30ba.png",
+    "static/media/shop.png": "/personal-portfolio/static/media/shop.52c3a2873d19e18ae12d.png",
     "static/media/u-veliko.svg": "/personal-portfolio/static/media/u-veliko.ca46c29c96249d05d0b69fc9dbe0bda8.svg",
     "static/media/u.svg": "/personal-portfolio/static/media/u.c6ebeef861852f766f1d74d53300bee1.svg",
     "index.html": "/personal-portfolio/index.html",
-    "main.631d9780.css.map": "/personal-portfolio/static/css/main.631d9780.css.map",
-    "main.17a169f9.js.map": "/personal-portfolio/static/js/main.17a169f9.js.map",
+    "main.b0fc0f59.css.map": "/personal-portfolio/static/css/main.b0fc0f59.css.map",
+    "main.902aa2f9.js.map": "/personal-portfolio/static/js/main.902aa2f9.js.map",
     "787.fb771931.chunk.js.map": "/personal-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.631d9780.css",
-    "static/js/main.17a169f9.js"
+    "static/css/main.b0fc0f59.css",
+    "static/js/main.902aa2f9.js"
   ]
 }
