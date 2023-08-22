@@ -6,12 +6,31 @@ import Sidebar from '../Sidebar'
 import { useIsOverflow } from '../../helpers/data/overflow'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faWeebly } from '@fortawesome/free-brands-svg-icons'
+import { faImage } from '@fortawesome/free-regular-svg-icons'
 import LoaderPac from '../common/LoaderPac'
 
 const Project = () => {
   const [loading, setLoading] = useState(false)
+  const [displayedProjects, setDisplayedProjects] = useState(
+    PROJECTS_ITEM.slice(0, 5)
+  )
+  const [showLoadMore, setShowLoadMore] = useState(true)
   const ref = React.useRef()
   const isOverflow = useIsOverflow(ref)
+
+  const loadMoreProjects = () => {
+    const currentlyDisplayed = displayedProjects.length
+    const nextProjects = PROJECTS_ITEM.slice(
+      currentlyDisplayed,
+      currentlyDisplayed + 2
+    )
+
+    setDisplayedProjects([...displayedProjects, ...nextProjects])
+
+    if (currentlyDisplayed + 2 >= PROJECTS_ITEM.length) {
+      setShowLoadMore(false) // hidden LoadMore
+    }
+  }
 
   useEffect(() => {
     setLoading(true)
@@ -34,7 +53,7 @@ const Project = () => {
             style={{ overflow: 'auto', height: '100vh' }}
           >
             <div className="main-section">
-              {PROJECTS_ITEM?.map((project, key) => (
+              {displayedProjects.map((project, key) => (
                 <div className="card" key={key}>
                   <div className="projects-page-cards">
                     <div className="image-projects-cards-wrapper">
@@ -95,7 +114,23 @@ const Project = () => {
                               <></>
                             )}
 
-                            
+                            {project.displayImg ? (
+                              <button className="btn-projects-live">
+                                <a
+                                  href={project.displayImg}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  Image&nbsp;
+                                  <FontAwesomeIcon
+                                    icon={faImage}
+                                    color="#fff"
+                                  />
+                                </a>
+                              </button>
+                            ) : (
+                              <></>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -103,6 +138,15 @@ const Project = () => {
                   </div>
                 </div>
               ))}
+
+              {/* Load more */}
+              {showLoadMore && (
+                <div className="wrapper-load_more">
+                  <button onClick={loadMoreProjects}>
+                    <span>Load More</span>
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </>
