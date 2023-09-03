@@ -68,7 +68,7 @@ const Sidebar = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/uro%C5%A1-kov%C4%8Di%C4%87-10286417b/"
+            href="https://www.linkedin.com/in/uros-kovcic-10286417b"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
