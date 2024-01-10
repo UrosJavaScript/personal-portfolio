@@ -87,10 +87,7 @@ const Home = () => {
                 <Link to="/personal-portfolio/contact">CONTACT ME</Link>
               </button>
               <button className="btn-home-download">
-                <a
-                  href="/personal-portfolio/Uros_Kovcic_CV-fullstack.pdf"
-                  download
-                >
+                <a href="/personal-portfolio/Uros_Kovcic_CV_2024.pdf" download>
                   DOWNLOAD CV
                 </a>
               </button>

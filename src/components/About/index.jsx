@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../common/AnimatedLetters'
 import LoaderPac from '../common/LoaderPac'
+import { AboutText } from '../../helpers/text/aboutText'
 import './index.scss'
 
 const About = () => {
@@ -46,21 +47,7 @@ const About = () => {
             </h1>
 
             <div className="about-text">
-              <p>
-                I am an experienced Junior Full Stack Web Developer with two
-                years of professional experience Currently, I mainly study and
-                work on FrontEnd technologies and go in the direction of
-                additional development. In 2018 I finished the PHP course at
-                ITAcademy. During that time I did three professional
-                internships, and immediately after that I developed projects
-                independently and worked as a freelancer for a while. And then I
-                got a job in the company as a FullStack developer. I
-                successfully completed several professional courses and further
-                improved my knowledge. Every day I read or learn something new
-                and I am quickly adaptable because I am a team player. I am an
-                extrovert I like to explore and I fit in easily everywhere. I am
-                very ambitious and always looking ahead.
-              </p>
+              <AboutText />
             </div>
           </div>
 
