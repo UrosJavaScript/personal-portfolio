@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.14a452e0.css",
-    "main.js": "/personal-portfolio/static/js/main.d704b36a.js",
+    "main.js": "/personal-portfolio/static/js/main.0de32abd.js",
     "static/js/787.fb771931.chunk.js": "/personal-portfolio/static/js/787.fb771931.chunk.js",
     "static/media/MoonDance-Regular.ttf": "/personal-portfolio/static/media/MoonDance-Regular.69bc2883db3811002422.ttf",
     "static/media/angular-apart.png": "/personal-portfolio/static/media/angular-apart.1e292304fb0b5ba8dac0.png",
@@ -22,11 +22,11 @@
     "static/media/u.svg": "/personal-portfolio/static/media/u.c6ebeef861852f766f1d74d53300bee1.svg",
     "index.html": "/personal-portfolio/index.html",
     "main.14a452e0.css.map": "/personal-portfolio/static/css/main.14a452e0.css.map",
-    "main.d704b36a.js.map": "/personal-portfolio/static/js/main.d704b36a.js.map",
+    "main.0de32abd.js.map": "/personal-portfolio/static/js/main.0de32abd.js.map",
     "787.fb771931.chunk.js.map": "/personal-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14a452e0.css",
-    "static/js/main.d704b36a.js"
+    "static/js/main.0de32abd.js"
   ]
 }
