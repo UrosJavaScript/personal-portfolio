@@ -3,7 +3,7 @@ import React from 'react'
 export const AboutText = () => {
   return (
     <p>
-      As a seasoned Junior Full Stack Web Developer with a robust three-year
+      As a seasoned Medior Full Stack Web Developer with a robust three-year
       professional journey, I specialize in mastering FrontEnd and BackEnd
       technologies, with a primary focus on React and React Native. My expertise
       has reached its zenith through contributing to several complex

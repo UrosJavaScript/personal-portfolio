@@ -22,10 +22,26 @@ import WeatherReactNews from '../../assets/images/projects/react-weather-news.pn
 
 import UniversityApk from '../../assets/images/projects/universityApk.png'
 
-export const PROJECTS_ITEM = [
+import TravelList from '../../assets/images/projects/travel-list.png'
 
+import SearchInput from '../../assets/images/projects/search-input.png'
+
+export const PROJECTS_ITEM = [
   {
     id: 1,
+    title: 'Search Input Web App',
+    linkLive: '',
+    linkGithub: 'https://github.com/UrosJavaScript/search-input-api',
+    displayImg: '',
+
+    description:
+      'I developed a search input that triggers an API call and provides autocomplete suggestions after the first character is entered. Users can select multiple entries and proceed to the next step.',
+    img: SearchInput,
+    using: 'react-vite, react-router, mui/material, api, css3',
+  },
+
+  {
+    id: 2,
     title: 'University Web Application',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/university-apk',
@@ -38,42 +54,31 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 2,
-    title: 'Weather and News Website',
-    linkLive: '',
-    linkGithub: 'https://github.com/UrosJavaScript/project-react-tailwind',
-    displayImg: '',
-
-    description:
-      'A web application that displays news, and filters it according to a selected category. On the right is the weather forecast. I used the API Openweathermap as well as json api for news categories.',
-    img: WeatherReactNews,
-    using: 'react-vite, tailwind-css, jsx, html5',
-  },
-
-  {
     id: 3,
-    title: 'Website Tailwind',
+    title: 'Expo Mobile Application',
     linkLive: '',
-    linkGithub: 'https://github.com/UrosJavaScript/capstone-project-tailwind',
+    linkGithub:
+      'https://github.com/UrosJavaScript/ExpoCli-locationApk/tree/feature/task-2',
     displayImg: '',
-
     description:
-      'I made a responsive website in tailwind css. I created this page for a company. I used Vite and javascript for mobile navigation as well as active category filtering.',
-    img: TailwindProject,
-    using: 'tailwind-css, vite, js, html5',
+      'The main goal of developing this mobile application is to help people find their desired destination. As a registered user, you can save your favorite places. The application is still under development.',
+    img: ZoomExpo,
+    using: 'expo, react native, js, css, redux, google api',
   },
+
   {
     id: 4,
-    title: 'Portal for Reading News',
+    title: 'Travel List Web App',
     linkLive: '',
-    linkGithub: 'https://github.com/UrosJavaScript/news-portal-react',
+    linkGithub: 'https://github.com/UrosJavaScript/travel-list',
     displayImg: '',
 
     description:
-      'I have created a portal that displays news for reading and retrieves data from the API. I used Slick Carousel and React Paginate, as well as bootstrap for columns.',
-    img: NewsApi,
-    using: 'react, jsx, react-context, animate-css, bootstrap',
+      'A mini application has been created with which you can list all the necessary things you need for your trip. There are statistics, as well as sorting of entered items.',
+    img: TravelList,
+    using: 'react, jsx, css3',
   },
+
   {
     id: 5,
     title: 'Web3Heroes',
@@ -89,6 +94,32 @@ export const PROJECTS_ITEM = [
 
   {
     id: 6,
+    title: 'Weather and News Website',
+    linkLive: '',
+    linkGithub: 'https://github.com/UrosJavaScript/project-react-tailwind',
+    displayImg: '',
+
+    description:
+      'A web application that displays news, and filters it according to a selected category. On the right is the weather forecast. I used the API Openweathermap as well as json api for news categories.',
+    img: WeatherReactNews,
+    using: 'react-vite, tailwind-css, jsx, html5',
+  },
+
+  {
+    id: 7,
+    title: 'RAZ Caregiver',
+    linkLive:
+      'https://play.google.com/store/apps/details?id=com.comit.caregiver&hl=en_US',
+    linkGithub: '',
+    displayImg: '',
+    description:
+      'I worked on the development of the functionality of the RAZ mobile application, which is intended for people with dementia. I participated in the development of the entire project.',
+    img: RazProject,
+    using: 'react native, codeigniter, php, css, html5',
+  },
+
+  {
+    id: 8,
     title: 'Personal Portfolio',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/personal-portfolio',
@@ -101,31 +132,33 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 7,
-    title: 'Expo Mobile Application',
+    id: 9,
+    title: 'Website Tailwind',
     linkLive: '',
-    linkGithub:
-      'https://github.com/UrosJavaScript/ExpoCli-locationApk/tree/feature/task-2',
+    linkGithub: 'https://github.com/UrosJavaScript/capstone-project-tailwind',
     displayImg: '',
+
     description:
-      'The main goal of developing this mobile application is to help people find their desired destination. As a registered user, you can save your favorite places. The application is still under development.',
-    img: ZoomExpo,
-    using: 'expo, react native, js, css, redux, async',
-  },
-  {
-    id: 8,
-    title: 'RAZ Caregiver',
-    linkLive: 'https://www.razmobility.com/about-us/',
-    linkGithub: '',
-    displayImg: '',
-    description:
-      'I worked on the development of the functionality of the RAZ mobile application, which is intended for people with dementia. I participated in the development of the entire project.',
-    img: RazProject,
-    using: 'react native, codeigniter, php, css, html5',
+      'I made a responsive website in tailwind css. I created this page for a company. I used Vite and javascript for mobile navigation as well as active category filtering.',
+    img: TailwindProject,
+    using: 'tailwind-css, vite, js, html5',
   },
 
   {
-    id: 9,
+    id: 10,
+    title: 'Portal for Reading News',
+    linkLive: '',
+    linkGithub: 'https://github.com/UrosJavaScript/news-portal-react',
+    displayImg: '',
+
+    description:
+      'I have created a portal that displays news for reading and retrieves data from the API. I used Slick Carousel and React Paginate, as well as bootstrap for columns.',
+    img: NewsApi,
+    using: 'react, jsx, react-context, animate-css, bootstrap',
+  },
+
+  {
+    id: 11,
     title: 'Apartments Website',
     linkLive: 'https://zlatibor-booking.com/',
     linkGithub:
@@ -137,7 +170,7 @@ export const PROJECTS_ITEM = [
     using: 'angular, ts, css, html5',
   },
   {
-    id: 10,
+    id: 12,
     title: 'Angular Mobile Application',
     linkLive:
       'https://play.google.com/store/apps/details?id=com.zlatiborbooking.com.zlatiborbooking&pli=1',
@@ -150,7 +183,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 11,
+    id: 13,
     title: 'Series Application',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/redux-movie-app',
@@ -161,7 +194,7 @@ export const PROJECTS_ITEM = [
     using: 'react, redux, js, scss, html5',
   },
   {
-    id: 12,
+    id: 14,
     title: 'Blog Post',
     linkLive: 'https://www.hernienzentrum.ch/blog/',
     linkGithub: '',
@@ -173,7 +206,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 13,
+    id: 15,
     title: 'Web Shop',
     linkLive: '',
     linkGithub: 'https://github.com/Uros12345678/cdi3-online_shop',

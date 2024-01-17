@@ -5,7 +5,7 @@ import Home from './components/Home'
 import Layout from './components/Layout'
 import Project from './components/Projects'
 
-function App() {
+export default function App() {
   return (
     <>
       <Routes>
@@ -19,5 +19,3 @@ function App() {
     </>
   )
 }
-
-export default App
