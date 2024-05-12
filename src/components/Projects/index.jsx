@@ -54,7 +54,7 @@ const Project = () => {
           >
             <div className="main-section">
               {displayedProjects.map((project, key) => (
-                <div className="card" key={key}>
+                <div className="card" key={`${project.id}-${key}`}>
                   <div className="projects-page-cards">
                     <div className="image-projects-cards-wrapper">
                       <a

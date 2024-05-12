@@ -26,14 +26,26 @@ import TravelList from '../../assets/images/projects/travel-list.png'
 
 import SearchInput from '../../assets/images/projects/search-input.png'
 
+import SplitBill from '../../assets/images/projects/split-bill.png'
+
 export const PROJECTS_ITEM = [
   {
     id: 1,
+    title: 'Split a Bill',
+    linkLive: '',
+    linkGithub: 'https://github.com/UrosJavaScript/eat-n-split',
+    displayImg: '',
+    description:
+      'Demo app for effortlessly simple bill payment. This is an app where you can basically go out with a friend for dinner or lunch and then you can split the bill using this app.',
+    img: SplitBill,
+    using: 'react, jsx, css3, reusable component',
+  },
+  {
+    id: 2,
     title: 'Search Input Web App',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/search-input-api',
     displayImg: '',
-
     description:
       'I developed a search input that triggers an API call and provides autocomplete suggestions after the first character is entered. Users can select multiple entries and proceed to the next step.',
     img: SearchInput,
@@ -41,12 +53,11 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: 'University Web Application',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/university-apk',
     displayImg: '',
-
     description:
       'Examination form. Students can edit and see the status of their application, as well as have information on how long they have been waiting. The administrator has permission for all users.',
     img: UniversityApk,
@@ -54,7 +65,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: 'Expo Mobile Application',
     linkLive: '',
     linkGithub:
@@ -67,12 +78,11 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'Travel List Web App',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/travel-list',
     displayImg: '',
-
     description:
       'A mini application has been created with which you can list all the necessary things you need for your trip. There are statistics, as well as sorting of entered items.',
     img: TravelList,
@@ -80,7 +90,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: 'Web3Heroes',
     linkLive: '',
     linkGithub: '',
@@ -93,7 +103,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: 'Weather and News Website',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/project-react-tailwind',
@@ -106,7 +116,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: 'RAZ Caregiver',
     linkLive:
       'https://play.google.com/store/apps/details?id=com.comit.caregiver&hl=en_US',
@@ -119,7 +129,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: 'Personal Portfolio',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/personal-portfolio',
@@ -132,7 +142,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: 'Website Tailwind',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/capstone-project-tailwind',
@@ -145,7 +155,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 10,
+    id: 11,
     title: 'Portal for Reading News',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/news-portal-react',
@@ -158,7 +168,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 11,
+    id: 12,
     title: 'Apartments Website',
     linkLive: 'https://zlatibor-booking.com/',
     linkGithub:
@@ -170,7 +180,7 @@ export const PROJECTS_ITEM = [
     using: 'angular, ts, css, html5',
   },
   {
-    id: 12,
+    id: 13,
     title: 'Angular Mobile Application',
     linkLive:
       'https://play.google.com/store/apps/details?id=com.zlatiborbooking.com.zlatiborbooking&pli=1',
@@ -183,7 +193,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 13,
+    id: 14,
     title: 'Series Application',
     linkLive: '',
     linkGithub: 'https://github.com/UrosJavaScript/redux-movie-app',
@@ -194,7 +204,7 @@ export const PROJECTS_ITEM = [
     using: 'react, redux, js, scss, html5',
   },
   {
-    id: 14,
+    id: 15,
     title: 'Blog Post',
     linkLive: 'https://www.hernienzentrum.ch/blog/',
     linkGithub: '',
@@ -206,7 +216,7 @@ export const PROJECTS_ITEM = [
   },
 
   {
-    id: 15,
+    id: 16,
     title: 'Web Shop',
     linkLive: '',
     linkGithub: 'https://github.com/Uros12345678/cdi3-online_shop',
