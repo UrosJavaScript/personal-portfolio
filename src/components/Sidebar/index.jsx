@@ -12,7 +12,6 @@ import {
   faGithub,
   faGithubSquare,
   faLinkedin,
-  faSkype,
   faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons'
 
@@ -24,7 +23,11 @@ const Sidebar = () => {
         <p className="sub-logo">Uroš</p>
       </Link>
       <nav>
-        <NavLink exact="true" acticeclassname="active" to="/personal-portfolio/">
+        <NavLink
+          exact="true"
+          acticeclassname="active"
+          to="/personal-portfolio/"
+        >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
@@ -81,15 +84,6 @@ const Sidebar = () => {
             href="https://github.com/Uros12345678?tab=repositories"
           >
             <FontAwesomeIcon icon={faGithubSquare} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="skype:profile_name?kowcicuros70"
-          >
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
           </a>
         </li>
         <li>

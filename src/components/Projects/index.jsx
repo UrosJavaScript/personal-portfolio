@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { PROJECTS_ITEM } from '../../helpers/data/projects'
 import './index.scss'
 import Sidebar from '../Sidebar'
-
 import { useIsOverflow } from '../../helpers/data/overflow'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faWeebly } from '@fortawesome/free-brands-svg-icons'
@@ -11,9 +10,12 @@ import LoaderPac from '../common/LoaderPac'
 
 const Project = () => {
   const [loading, setLoading] = useState(false)
+
+  const sortedProjects = PROJECTS_ITEM.sort((a, b) => a.priority - b.priority)
   const [displayedProjects, setDisplayedProjects] = useState(
-    PROJECTS_ITEM.slice(0, 5)
+    sortedProjects.slice(0, 5)
   )
+
   const [showLoadMore, setShowLoadMore] = useState(true)
   const ref = React.useRef()
   const isOverflow = useIsOverflow(ref)
