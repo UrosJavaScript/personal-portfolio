@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.1e0cd6f9.css",
+    "main.css": "/personal-portfolio/static/css/main.181949e6.css",
     "main.js": "/personal-portfolio/static/js/main.e432bfa5.js",
     "static/media/zoom-apk.png": "/personal-portfolio/static/media/zoom-apk.dc35297cd871eeca83d4.png",
     "static/media/MoonDance-Regular.ttf": "/personal-portfolio/static/media/MoonDance-Regular.69bc2883db3811002422.ttf",
@@ -24,11 +24,11 @@
     "static/media/u-veliko.svg": "/personal-portfolio/static/media/u-veliko.ca46c29c96249d05d0b69fc9dbe0bda8.svg",
     "static/media/u.svg": "/personal-portfolio/static/media/u.c6ebeef861852f766f1d74d53300bee1.svg",
     "index.html": "/personal-portfolio/index.html",
-    "main.1e0cd6f9.css.map": "/personal-portfolio/static/css/main.1e0cd6f9.css.map",
+    "main.181949e6.css.map": "/personal-portfolio/static/css/main.181949e6.css.map",
     "main.e432bfa5.js.map": "/personal-portfolio/static/js/main.e432bfa5.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e0cd6f9.css",
+    "static/css/main.181949e6.css",
     "static/js/main.e432bfa5.js"
   ]
 }
