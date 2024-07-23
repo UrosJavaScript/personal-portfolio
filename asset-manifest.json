@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.181949e6.css",
-    "main.js": "/personal-portfolio/static/js/main.e432bfa5.js",
+    "main.js": "/personal-portfolio/static/js/main.b5447622.js",
     "static/media/zoom-apk.png": "/personal-portfolio/static/media/zoom-apk.dc35297cd871eeca83d4.png",
     "static/media/MoonDance-Regular.ttf": "/personal-portfolio/static/media/MoonDance-Regular.69bc2883db3811002422.ttf",
     "static/media/angular-apart.png": "/personal-portfolio/static/media/angular-apart.1e292304fb0b5ba8dac0.png",
@@ -11,6 +11,7 @@
     "static/media/react-news-api.png": "/personal-portfolio/static/media/react-news-api.23a4e9d340bc4dde49b7.png",
     "static/media/web3heroes.png": "/personal-portfolio/static/media/web3heroes.776e7a3d7e4311f8be92.png",
     "static/media/universityApk.png": "/personal-portfolio/static/media/universityApk.581328ebdba23049d9f5.png",
+    "static/media/usepopcorn-movie.png": "/personal-portfolio/static/media/usepopcorn-movie.7f987f3ff3a1417f9f69.png",
     "static/media/Barlow-Regular.ttf": "/personal-portfolio/static/media/Barlow-Regular.e7eb634d040a6f384033.ttf",
     "static/media/split-bill.png": "/personal-portfolio/static/media/split-bill.c0a8d304acd380b90956.png",
     "static/media/raz-cg.png": "/personal-portfolio/static/media/raz-cg.01b1fe73765c7eafa61a.png",
@@ -25,10 +26,10 @@
     "static/media/u.svg": "/personal-portfolio/static/media/u.c6ebeef861852f766f1d74d53300bee1.svg",
     "index.html": "/personal-portfolio/index.html",
     "main.181949e6.css.map": "/personal-portfolio/static/css/main.181949e6.css.map",
-    "main.e432bfa5.js.map": "/personal-portfolio/static/js/main.e432bfa5.js.map"
+    "main.b5447622.js.map": "/personal-portfolio/static/js/main.b5447622.js.map"
   },
   "entrypoints": [
     "static/css/main.181949e6.css",
-    "static/js/main.e432bfa5.js"
+    "static/js/main.b5447622.js"
   ]
 }
