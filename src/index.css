@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Barlow', 'sans-serif';
+  font: 'Barlow', 'sans-serif';
   color: #444;
   background: #090d16;
   overflow: hidden;
