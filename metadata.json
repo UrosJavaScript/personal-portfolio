@@ -1,0 +1,8 @@
+{
+  "name": "Portfolio Uros Kovcic",
+  "description": "Personal developer portfolio of Uros Kovcic showcasing projects, skills, and contact information.",
+  "prompt": "Personal portfolio website for Uros Kovcic",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
