@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExternalLink, ArrowLeft, CheckCircle2 } from "lucide-react";
 import { projects } from "@/lib/projects-data";
+import { ProjectCardImage } from "@/components/ProjectCardImage";
 
 const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg
@@ -48,15 +49,12 @@ export default function ProjectDetailPage({
         </Link>
 
         <div className="relative h-72 sm:h-96 w-full rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl mb-8">
-          <img
+          <ProjectCardImage
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover"
+            category={project.category}
+            className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
-          <span className="absolute bottom-4 left-4 px-3 py-1 rounded-full bg-zinc-900/90 border border-zinc-700/60 text-xs font-mono text-zinc-200">
-            {project.category}
-          </span>
         </div>
 
         <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">

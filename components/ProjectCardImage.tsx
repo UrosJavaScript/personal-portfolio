@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Code2, Globe, Smartphone, Server } from "lucide-react";
 
 export function ProjectCardImage({
@@ -14,7 +14,23 @@ export function ProjectCardImage({
   category: string;
   className?: string;
 }) {
+  const [currentSrc, setCurrentSrc] = useState(src);
   const [error, setError] = useState(false);
+
+  useEffect(() => {
+    setCurrentSrc(src);
+    setError(false);
+  }, [src]);
+
+  const handleImageError = () => {
+    if (currentSrc.endsWith(".jpg")) {
+      setCurrentSrc(currentSrc.replace(".jpg", ".png"));
+    } else if (currentSrc.endsWith(".png")) {
+      setCurrentSrc(currentSrc.replace(".png", ".svg"));
+    } else {
+      setError(true);
+    }
+  };
 
   const getCategoryIcon = () => {
     switch (category) {
@@ -35,10 +51,10 @@ export function ProjectCardImage({
     >
       {!error ? (
         <img
-          src={src}
+          src={currentSrc}
           alt={alt}
           loading="lazy"
-          onError={() => setError(true)}
+          onError={handleImageError}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
       ) : (
