@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import React from "react";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import React from 'react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 import {
   ArrowRight,
   ExternalLink,
@@ -12,16 +12,16 @@ import {
   Layers,
   Cpu,
   Mail,
-} from "lucide-react";
-import { Spotlight } from "@/components/ui/spotlight";
-import { Cover } from "@/components/ui/cover";
-import { CometCard } from "@/components/ui/comet-card";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { ProjectCardImage } from "@/components/ProjectCardImage";
-import { homePageStyles, spotlightStyles } from "@/lib/dummyStyles";
-import { projects } from "@/lib/projects-data";
+} from 'lucide-react'
+import { Spotlight } from '@/components/ui/spotlight'
+import { Cover } from '@/components/ui/cover'
+import { CometCard } from '@/components/ui/comet-card'
+import { BackgroundBeams } from '@/components/ui/background-beams'
+import { ProjectCardImage } from '@/components/ProjectCardImage'
+import { homePageStyles, spotlightStyles } from '@/lib/dummyStyles'
+import { projects } from '@/lib/projects-data'
 
-const GithubIcon = ({ className = "w-3.5 h-3.5" }: { className?: string }) => (
+const GithubIcon = ({ className = 'w-3.5 h-3.5' }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
     fill="none"
@@ -34,22 +34,26 @@ const GithubIcon = ({ className = "w-3.5 h-3.5" }: { className?: string }) => (
     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
     <path d="M9 18c-4.51 2-5-2-7-2" />
   </svg>
-);
+)
 
 export default function HomePage() {
-  const featuredProjects = projects.filter((p) => p.featured);
+  const featuredProjects = projects.filter((p) => p.featured)
 
   return (
     <div className={homePageStyles.container}>
       <div className={homePageStyles.backgroundGrid.wrapper}>
-        <div className={`h-full w-full ${homePageStyles.backgroundGrid.pattern}`} />
+        <div
+          className={`h-full w-full ${homePageStyles.backgroundGrid.pattern}`}
+        />
       </div>
       <div className={homePageStyles.gradientOverlay} />
 
       <Spotlight className={spotlightStyles.position} fill="white" />
       <BackgroundBeams />
 
-      <div className={`${homePageStyles.heroSection} relative z-10 pt-4 md:pt-8`}>
+      <div
+        className={`${homePageStyles.heroSection} relative z-10 pt-4 md:pt-8`}
+      >
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,9 +92,12 @@ export default function HomePage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className={homePageStyles.h2}
         >
-          Hi, I'm <span className="text-white font-semibold">Uroš Kovčić</span> — Medior Full-Stack Developer specializing in{" "}
-          <span className="text-blue-400">React</span>, <span className="text-indigo-400">Next.js</span>,{" "}
-          <span className="text-sky-400">TypeScript</span>, and <span className="text-emerald-400">PHP</span>.
+          Hi, I'm <span className="text-white font-semibold">Uroš Kovčić</span>{' '}
+          — Medior Full-Stack Developer specializing in{' '}
+          <span className="text-blue-400">React</span>,{' '}
+          <span className="text-indigo-400">Next.js</span>,{' '}
+          <span className="text-sky-400">TypeScript</span>, and{' '}
+          <span className="text-emerald-400">PHP</span>.
         </motion.h2>
 
         <motion.p
@@ -99,7 +106,9 @@ export default function HomePage() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className={homePageStyles.paragraph}
         >
-          Over 3+ years of engineering robust digital products, transforming complex Figma designs into responsive, high-performance web applications, and delivering reliable backend architectures.
+          Over 4+ years of engineering robust digital products, transforming
+          complex Figma designs into responsive, high-performance web
+          applications, and delivering reliable backend architectures.
         </motion.p>
 
         <motion.div
@@ -238,7 +247,8 @@ export default function HomePage() {
             <Code2 className="w-6 h-6 text-blue-400 mb-3" />
             <h4 className="text-white font-bold text-base">Modern Frontend</h4>
             <p className="text-zinc-400 text-sm mt-1">
-              React 18+, Next.js App Router, TypeScript, Tailwind CSS, component modularity.
+              React 18+, Next.js App Router, TypeScript, Tailwind CSS, component
+              modularity.
             </p>
           </div>
 
@@ -246,19 +256,23 @@ export default function HomePage() {
             <Cpu className="w-6 h-6 text-emerald-400 mb-3" />
             <h4 className="text-white font-bold text-base">Backend & APIs</h4>
             <p className="text-zinc-400 text-sm mt-1">
-              Node.js, PHP, CodeIgniter, MySQL, RESTful API design and asynchronous data flows.
+              Node.js, PHP, CodeIgniter, MySQL, RESTful API design and
+              asynchronous data flows.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl border border-zinc-800/80 bg-zinc-900/30 backdrop-blur-sm">
             <Layers className="w-6 h-6 text-purple-400 mb-3" />
-            <h4 className="text-white font-bold text-base">Mobile Development</h4>
+            <h4 className="text-white font-bold text-base">
+              Mobile Development
+            </h4>
             <p className="text-zinc-400 text-sm mt-1">
-              React Native & Expo cross-platform apps published to Google Play Store.
+              React Native & Expo cross-platform apps published to Google Play
+              Store.
             </p>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
