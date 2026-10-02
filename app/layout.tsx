@@ -1,19 +1,20 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Sidebar } from '@/components/Sidebar'
+import { getAssetPath } from '@/lib/path'
 
 export const metadata: Metadata = {
   title: 'Portfolio | Uros Kovcic - Full-Stack Developer',
   description:
     'Personal developer portfolio of Uros Kovcic showcasing projects, skills, tools, experience, and contact information.',
   icons: {
-    icon: '/faviconLogo.png',
+    icon: getAssetPath('/faviconLogo.png'),
   },
   openGraph: {
     title: 'Portfolio | Uros Kovcic - Full-Stack Developer',
     description:
       'Personal developer portfolio of Uros Kovcic showcasing projects, skills, tools, experience, and contact information.',
-    images: ['/faviconLogo.png'],
+    images: [getAssetPath('/faviconLogo.png')],
   },
 }
 
