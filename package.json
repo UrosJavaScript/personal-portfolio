@@ -21,7 +21,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out"
+    "deploy": "next build && echo '' > out/.nojekyll && gh-pages -d out"
   },
   "devDependencies": {
     "autoprefixer": "^10.6.1",
