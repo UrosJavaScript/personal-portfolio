@@ -14,6 +14,7 @@ import { CometCard } from "@/components/ui/comet-card";
 import { ProjectCardImage } from "@/components/ProjectCardImage";
 import { projectsPageStyles } from "@/lib/dummyStyles";
 import { projects, Project } from "@/lib/projects-data";
+import { getAssetPath } from "@/lib/path";
 
 const GithubIcon = ({ className = "w-3 h-3" }: { className?: string }) => (
   <svg
@@ -117,7 +118,7 @@ export default function ProjectsPage() {
               >
                 <div>
                   <ProjectCardImage
-                    src={project.image}
+                    src={getAssetPath(project.image)}
                     alt={project.title}
                     category={project.category}
                     className="h-44 mb-4"
@@ -223,7 +224,7 @@ export default function ProjectsPage() {
               </button>
 
               <ProjectCardImage
-                src={activeModalProject.image}
+                src={getAssetPath(activeModalProject.image)}
                 alt={activeModalProject.title}
                 category={activeModalProject.category}
                 className="h-60 mb-6"

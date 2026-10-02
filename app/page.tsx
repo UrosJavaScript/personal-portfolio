@@ -20,6 +20,7 @@ import { BackgroundBeams } from '@/components/ui/background-beams'
 import { ProjectCardImage } from '@/components/ProjectCardImage'
 import { homePageStyles, spotlightStyles } from '@/lib/dummyStyles'
 import { projects } from '@/lib/projects-data'
+import { getAssetPath } from '@/lib/path'
 
 const GithubIcon = ({ className = 'w-3.5 h-3.5' }: { className?: string }) => (
   <svg
@@ -173,7 +174,7 @@ export default function HomePage() {
                       className="block overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       <ProjectCardImage
-                        src={project.image}
+                        src={getAssetPath(project.image)}
                         alt={project.title}
                         category={project.category}
                         className="h-48 mb-5"

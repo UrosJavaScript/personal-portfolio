@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ExternalLink, ArrowLeft, CheckCircle2 } from "lucide-react";
 import { projects } from "@/lib/projects-data";
 import { ProjectCardImage } from "@/components/ProjectCardImage";
+import { getAssetPath } from "@/lib/path";
 
 const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg
@@ -50,7 +51,7 @@ export default function ProjectDetailPage({
 
         <div className="relative h-72 sm:h-96 w-full rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl mb-8">
           <ProjectCardImage
-            src={project.image}
+            src={getAssetPath(project.image)}
             alt={project.title}
             category={project.category}
             className="w-full h-full"
