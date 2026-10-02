@@ -159,7 +159,7 @@ export default function HomePage() {
               href="/projects"
               className="text-xs sm:text-sm font-semibold text-zinc-400 hover:text-white inline-flex items-center gap-1 group transition-colors"
             >
-              <span>View All 20 Projects</span>
+              <span>View All Projects</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
