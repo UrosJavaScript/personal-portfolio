@@ -130,7 +130,7 @@ export default function HomePage() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-zinc-900/80 text-zinc-200 border border-zinc-800 font-semibold text-sm hover:bg-zinc-800 hover:text-white transition-all active:scale-95"
           >
             <Mail className="w-4 h-4 text-zinc-400" />
-            <span>Get in Touch</span>
+            <span>Let's Work Together</span>
           </Link>
 
           <a

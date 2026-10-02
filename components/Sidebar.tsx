@@ -125,7 +125,7 @@ export const Sidebar: React.FC = () => {
           <span className="sr-only">Home</span>
         </Link>
 
-        <div className="w-6 h-[1px] bg-zinc-800" />
+        <div className="w-6 h-px bg-zinc-800" />
 
         {/* Navigation Items */}
         <nav className="flex flex-col gap-2">
@@ -162,7 +162,7 @@ export const Sidebar: React.FC = () => {
           })}
         </nav>
 
-        <div className="w-6 h-[1px] bg-zinc-800" />
+        <div className="w-6 h-px bg-zinc-800" />
 
         {/* Social Links */}
         <div className="flex flex-col gap-2">

@@ -58,7 +58,7 @@ export function ProjectCardImage({
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
       ) : (
-        <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-zinc-900 via-zinc-950 to-zinc-900 p-4 text-center">
+        <div className="w-full h-full flex flex-col items-center justify-center bg-linear-to-br from-zinc-900 via-zinc-950 to-zinc-900 p-4 text-center">
           <div className="p-3 rounded-2xl bg-zinc-800/60 border border-zinc-700/50 mb-2">
             {getCategoryIcon()}
           </div>
@@ -67,7 +67,7 @@ export function ProjectCardImage({
           </span>
         </div>
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none" />
       <span className="absolute bottom-2.5 left-2.5 px-2.5 py-0.5 rounded-md bg-zinc-900/90 border border-zinc-700/60 text-[10px] font-mono font-medium text-zinc-300">
         {category}
       </span>

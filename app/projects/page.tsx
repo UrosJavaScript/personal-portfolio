@@ -93,7 +93,7 @@ export default function ProjectsPage() {
             })}
           </div>
 
-          <div className="relative min-w-[240px]">
+          <div className="relative min-w-60">
             <Search className="w-4 h-4 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"

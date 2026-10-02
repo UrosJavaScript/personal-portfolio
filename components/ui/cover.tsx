@@ -25,7 +25,7 @@ export const Cover: React.FC<CoverProps> = ({ children, className }) => {
         }}
         transition={{ duration: 0.3 }}
         className={cn(
-          "absolute inset-0 rounded-xl bg-gradient-to-r from-blue-600/30 via-indigo-500/30 to-purple-600/30 backdrop-blur-sm border border-blue-500/40",
+          "absolute inset-0 rounded-xl bg-linear-to-r from-blue-600/30 via-indigo-500/30 to-purple-600/30 backdrop-blur-sm border border-blue-500/40",
           hovered && "border-blue-400 shadow-[0_0_30px_rgba(59,130,246,0.35)]"
         )}
       />
@@ -67,7 +67,7 @@ export const Cover: React.FC<CoverProps> = ({ children, className }) => {
 
       <span
         className={cn(
-          "relative z-10 font-extrabold bg-gradient-to-r from-white via-zinc-100 to-zinc-300 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:to-white transition-all",
+          "relative z-10 font-extrabold bg-linear-to-r from-white via-zinc-100 to-zinc-300 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:to-white transition-all",
           className
         )}
       >

@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+ /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -6,4 +6,21 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+
+
+
+
+// const nextConfig = {
+//   output: 'export',
+//   basePath: '/personal-portfolio',
+//   assetPrefix: '/personal-portfolio/',
+//   trailingSlash: true,
+
+//   reactStrictMode: true,
+
+//   images: {
+//     unoptimized: true,
+//   },
+// }
+
+export default nextConfig

@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import React from "react";
-import Link from "next/link";
-import { ArrowLeft, AlertCircle } from "lucide-react";
+import React from 'react'
+import Link from 'next/link'
+import { ArrowLeft, AlertCircle } from 'lucide-react'
 
 export default function NotFound() {
   return (
@@ -14,7 +14,8 @@ export default function NotFound() {
         <h1 className="text-4xl font-extrabold text-white mb-2">404</h1>
         <h2 className="text-xl font-bold text-zinc-200 mb-2">Page Not Found</h2>
         <p className="text-sm text-zinc-400 mb-6 leading-relaxed">
-          The page or project you are looking for doesn't exist or has been moved.
+          The page or project you are looking for doesn't exist or has been
+          moved.
         </p>
         <Link
           href="/"
@@ -25,5 +26,5 @@ export default function NotFound() {
         </Link>
       </div>
     </div>
-  );
+  )
 }

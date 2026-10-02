@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import {
   Mail,
   MapPin,
@@ -12,10 +12,10 @@ import {
   Sparkles,
   PhoneCall,
   Laptop,
-} from "lucide-react";
-import { contactPageStyles } from "@/lib/dummyStyles";
+} from 'lucide-react'
+import { contactPageStyles } from '@/lib/dummyStyles'
 
-const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+const GithubIcon = ({ className = 'w-4 h-4' }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
     fill="none"
@@ -28,9 +28,9 @@ const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
     <path d="M9 18c-4.51 2-5-2-7-2" />
   </svg>
-);
+)
 
-const LinkedinIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+const LinkedinIcon = ({ className = 'w-4 h-4' }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
     fill="none"
@@ -44,28 +44,28 @@ const LinkedinIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
     <rect width="4" height="12" x="2" y="9" />
     <circle cx="4" cy="4" r="2" />
   </svg>
-);
+)
 
 export default function ContactPage() {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false)
 
-  const email = "kowcicuros70@gmail.com";
-  const phone = "+381691217273";
-  const githubUrl = "https://github.com/UrosJavaScript";
-  const linkedinUrl = "https://www.linkedin.com/in/uros-kovcic-6a2829272/";
+  const email = 'kowcicuros70@gmail.com'
+  const phone = '+381691217273'
+  const githubUrl = 'https://github.com/UrosJavaScript'
+  const linkedinUrl = 'https://www.linkedin.com/in/uros-kovcic-10286417b/'
   const whatsappUrl = `https://api.whatsapp.com/send?phone=+381691217273&text=${encodeURIComponent(
-    "Hello Uros! I checked your portfolio and would like to connect."
-  )}`;
+    'Hello Uros! I checked your portfolio and would like to connect.'
+  )}`
   const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
     email
-  )}`;
+  )}`
 
   const handleCopyEmail = (e: React.MouseEvent) => {
-    e.preventDefault();
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-  };
+    e.preventDefault()
+    navigator.clipboard.writeText(email)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2500)
+  }
 
   return (
     <div className={contactPageStyles.container}>
@@ -80,7 +80,9 @@ export default function ContactPage() {
             <div>
               <h1 className={contactPageStyles.title}>Let's Collaborate</h1>
               <p className={contactPageStyles.description}>
-                Interested in working together, discussing a project opportunity, or hiring for a role? Reach out directly via email, WhatsApp, or professional socials.
+                Interested in working together, discussing a project
+                opportunity, or hiring for a role? Reach out directly via email,
+                WhatsApp, or professional socials.
               </p>
             </div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium self-start md:self-auto shrink-0">
@@ -93,10 +95,7 @@ export default function ContactPage() {
         {/* Primary Contact Cards Grid */}
         <div className={contactPageStyles.grid}>
           {/* Email Card */}
-          <a
-            href={`mailto:${email}`}
-            className={contactPageStyles.contactCard}
-          >
+          <a href={`mailto:${email}`} className={contactPageStyles.contactCard}>
             <div className={contactPageStyles.contactIconContainer}>
               <Mail className={contactPageStyles.contactIcon} />
             </div>
@@ -148,7 +147,8 @@ export default function ContactPage() {
               Direct Communication
             </h3>
             <p className="text-xs text-zinc-400 leading-relaxed mb-4">
-              For fastest response, feel free to use 1-click email compose or copy the address directly:
+              For fastest response, feel free to use 1-click email compose or
+              copy the address directly:
             </p>
 
             <div className="space-y-3">
@@ -171,9 +171,11 @@ export default function ContactPage() {
               >
                 <span className="flex items-center gap-2.5">
                   <Copy className="w-4 h-4 text-blue-400" />
-                  {copied ? "Copied to clipboard!" : "Copy Email Address"}
+                  {copied ? 'Copied to clipboard!' : 'Copy Email Address'}
                 </span>
-                {copied && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />}
+                {copied && (
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                )}
               </button>
 
               <a
@@ -198,7 +200,8 @@ export default function ContactPage() {
               Profiles & Availability
             </h3>
             <p className="text-xs text-zinc-400 leading-relaxed">
-              Explore my open-source repositories and connect on LinkedIn for work history and recommendations:
+              Explore my open-source repositories and connect on LinkedIn for
+              work history and recommendations:
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -213,7 +216,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <div className="text-white">GitHub</div>
-                  <div className="text-[10px] text-zinc-400 font-mono">@UrosJavaScript</div>
+                  <div className="text-[10px] text-zinc-400 font-mono">
+                    @UrosJavaScript
+                  </div>
                 </div>
               </a>
 
@@ -228,7 +233,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <div className="text-white">LinkedIn</div>
-                  <div className="text-[10px] text-zinc-400 font-mono">Uros Kovcic</div>
+                  <div className="text-[10px] text-zinc-400 font-mono">
+                    Uros Kovcic
+                  </div>
                 </div>
               </a>
             </div>
@@ -240,12 +247,14 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center gap-2 text-xs text-zinc-300 font-medium">
                 <Sparkles className="w-3.5 h-3.5 text-yellow-500" />
-                <span>Focus: Next.js, React, TypeScript, Mobile & Full-Stack</span>
+                <span>
+                  Focus: Next.js, React, TypeScript, Mobile & Full-Stack
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
