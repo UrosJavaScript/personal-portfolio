@@ -10,11 +10,8 @@
 const nextConfig = {
   output: 'export',
   basePath: '/personal-portfolio',
-  assetPrefix: '/personal-portfolio/',
   trailingSlash: true,
-
   reactStrictMode: true,
-
   images: {
     unoptimized: true,
   },
